@@ -1,5 +1,5 @@
 import './App.css';
-import Muro from './components/Muro';
+import Muro from './components/Muro/Muro';
 function App() {
   return (
     <div className="App">

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+
+.header{
+    padding-top: 30px;
+    margin-bottom: 50px;
+    background-color:rgb(215, 127, 161);
+}
+.icon{
+    height: 100px;
+    color:  black;
+}
+.prueba{
+    background-color: rgb(246, 137, 137)!important;
+    border-color: rgb(246, 137, 137)!important;
+}
+.prueba:hover{
+    background-color: rgb(246, 137, 137)!important;
+    border-color: rgb(246, 137, 137)!important;
+}
+
+
