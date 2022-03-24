@@ -1,6 +1,8 @@
 .respuesta{
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: rgb(135, 67, 86);
+    padding-left: 90px;
+    background-color: rgb(244, 187, 187);
+    justify-content: 'flex-end';
     border-radius: 10px;
 }
