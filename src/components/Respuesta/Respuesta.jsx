@@ -3,9 +3,7 @@ import "./styles.css";
 import { Row, Col } from "react-bootstrap";
 
 const Index = (props) => {
-
     sessionStorage.setItem(props.item,JSON.stringify(props.info));
-
     return (
         <div>
             <Row>
@@ -20,9 +18,7 @@ const Index = (props) => {
                         alt='...'
                         style={{ maxWidth: '4rem' }} />
                 </Col>
-
             </Row>
-
         </div>
     );
 };

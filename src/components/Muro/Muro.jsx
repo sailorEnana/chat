@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import Nombre from "../Nombre/Index";
-import Nacimiento from "../Nacimiento/Index";
-import Datos from "../Datos/Index";
+import React from 'react';
+import Nombre from "../Formulario/Nombre";
+import Nacimiento from "../Formulario/Nacimiento";
+import Datos from "../Formulario/Datos";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { BsSuitHeart } from "react-icons/bs";
 import "./style.css";
-import Resultado from "../Resultado/Index";
+import Resultado from "../Resultado/Resultado";
 
 const Muro = (props) => {
     const [showResults, setShowResults] = React.useState(false)

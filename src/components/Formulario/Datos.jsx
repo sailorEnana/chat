@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import "./styles.css";
-import Respuesta from "../Respuesta/Index";
+import Respuesta from "../Respuesta/Respuesta";
 
-const Index = () => {
+const Datos = () => {
     const [values, setValues] = useState({
         email: "",
         cellphone: ""
@@ -53,4 +53,4 @@ const Index = () => {
     );
 };
 
-export default Index;
+export default Datos;

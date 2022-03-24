@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import "./styles.css";
-import Respuesta from "../Respuesta/Index";
+import Respuesta from "../Respuesta/Respuesta";
 
-const Index = () => {
+const Nombre = () => {
     const [values, setValues] = useState({
         name: "",
         secondName: "",
@@ -14,16 +14,9 @@ const Index = () => {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setValues({ ...values, [name]: (value + " ") });
-        // if(name != "" && lastName !=""){
-        //     values.prueba=true;
-        //     console.log("entre");
-        // };
     };
     const { name, secondName, lastName, lastName2 } = values;
     const array = [values.name, values.secondName, values.lastName, values.lastName2];
-    //const prueba = values.prueba;
-
-    console.log(values);
 
     return (
         <div>
@@ -71,17 +64,11 @@ const Index = () => {
                     </Col>
                 </Row>
                 <div>
-                    <Respuesta info={array} item="nombreItem"/>
-                    {/* {prueba ? (
-                        <Respuesta nombre={array} />
-                    ) : (
-                        <Respuesta nombre={[]} />
-                    )} */}
+                    <Respuesta info={array} item="nombreItem" />
                 </div>
-
             </Container>
         </div>
     );
 };
 
-export default Index;
+export default Nombre;

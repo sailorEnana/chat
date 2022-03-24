@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import "./styles.css";
-import Respuesta from "../Respuesta/Index";
+import Respuesta from "../Respuesta/Respuesta";
 
-const Index = () => {
+const Nacimiento = () => {
     const [values, setValues] = useState({
         day: "",
         month: "",
@@ -15,7 +15,7 @@ const Index = () => {
     };
     const { day, month, year } = values;
     const array = [values.day, " ", values.month, " ", values.year];
-    console.log(array);
+
     return (
         <div>
             <Container>
@@ -54,10 +54,10 @@ const Index = () => {
                         </Form>
                     </Col>
                 </Row>
-                <Respuesta info={array} item="nacimientoItem"/>
+                <Respuesta info={array} item="nacimientoItem" />
             </Container>
         </div>
     );
 };
 
-export default Index;
+export default Nacimiento;
